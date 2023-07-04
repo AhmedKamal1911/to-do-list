@@ -76,7 +76,7 @@ body {
 }
 @media (max-width: 767px) {
   .result {
-    max-width: 100%;
+    width: 97%;
   }
 }
 .task {
