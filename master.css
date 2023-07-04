@@ -1,0 +1,109 @@
+body {
+  min-height: 95.3vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-image: url(cool-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.form {
+  border-radius: 6px;
+  background-color: rgba(25, 23, 23, 0.359);
+  width: 550px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  border: none;
+}
+@media (max-width: 767px) {
+  .form {
+    max-width: 100%;
+    flex-direction: column;
+    height: 120px;
+  }
+}
+.form input:nth-child(1) {
+  flex: 1;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  font-size: 19px;
+  padding: 0px 10px;
+  outline: navy;
+  caret-color: crimson;
+  font-family: inherit;
+}
+@media (max-width: 767px) {
+  .form input:nth-child(1) {
+    font-size: 16px;
+    width: 90%;
+    max-height: 40px;
+  }
+}
+.form input:nth-child(1):focus {
+  outline: 2px solid crimson;
+}
+.form input:nth-child(2) {
+  width: 80px;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 20px;
+  width: 530px;
+  border-radius: 6px;
+  background-color: rgba(25, 23, 23, 0.359);
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .result {
+    max-width: 100%;
+  }
+}
+.task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.task p {
+  flex: 1;
+  margin: 0;
+}
+.task .delete {
+  background-color: rgb(235, 38, 77);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 6px;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.form input:nth-child(2):hover,
+.task .delete:hover {
+  opacity: 0.6;
+  transform: scale(0.9);
+}
